@@ -173,7 +173,8 @@ $header->render();
         </div>
     </div>
     <div class="container text-center">
-        <p class="mt-4"><a href='shop.php' class="btn btn-primary">Produk Lainnya</a></p>
+        //merubah kata dalam button
+        <p class="mt-4"><a href='shop.php' class="btn btn-primary">selamat ujian</a></p>
     </div>
 
 
