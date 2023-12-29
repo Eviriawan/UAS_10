@@ -1,6 +1,6 @@
 <?php
 
-
+//inheritance
 class Product 
 {
     protected $id;
@@ -70,3 +70,7 @@ echo $product->displayInfo();
 ?>
 
 
+
+//Secara umum, getProductById berfokus pada pengambilan dan inisialisasi data produk dari database, 
+sedangkan getdesc berfokus pada mendapatkan deskripsi singkat dari produk yang telah diinisialisasi. 
+Keduanya memiliki peran masing-masing dalam mengelola data produk dan memberikan informasi spesifik.

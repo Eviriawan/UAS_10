@@ -110,16 +110,16 @@ $header->render();
             $this->koneksi = $koneksi;
         }
 
-        public function getProductById($productId)
+        public function getProductById($productId)//mendapatkan data produk berdasarkan ID yang diberikan.
         {
             $query = "SELECT * FROM tb_produk_pria WHERE id = $productId";
             $hasil = mysqli_query($this->koneksi, $query);
             $data = mysqli_fetch_array($hasil);
 
-            parent::__construct ($data['id'], $data['nama_produk'], $data['harga'], $data['gambar']); //disini penerapan parentnya
+            parent::__construct ($data['id'], $data['nama_produk'], $data['harga'], $data['gambar']); //disini penerapan parentnya (memanggil konstruktor dari kelas induk)
             return $this;
         }
-        public function getdesc()
+        public function getdesc()//mendapatkan deskripsi singkat produk berdasarkan ID produk yang telah diinisialisasi
         {
             $query = "SELECT * FROM tb_produk_pria WHERE id = ".$this->getId();
             $hasil = mysqli_query($this->koneksi, $query);
